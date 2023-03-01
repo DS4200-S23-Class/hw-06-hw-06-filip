@@ -1,0 +1,56 @@
+/* Make Font Arial */
+body {
+    font-family: Arial;
+}
+
+.centered {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+  }
+/* Make left column 60% wide */
+.left-column {
+    width: 60%;
+    float: left;
+  }
+  
+/* Make right column 40% wide */
+.right-column {
+    width: 40%;
+    float: right;
+  }
+
+.point-border {
+  stroke-width: 3px;
+  stroke: black;
+}
+
+circle {
+    fill: blueviolet;
+}
+
+circle:hover {
+  fill: blue;
+}
+
+.line {
+	stroke: black;
+	stroke-width: 5
+}
+
+.add_border {
+	stroke-width: 3;
+	stroke: red;
+}
+
+.bar {
+	fill: Black;
+}
+
+.bar:hover {
+	fill: red;
+  background-image: none;
+}
+  

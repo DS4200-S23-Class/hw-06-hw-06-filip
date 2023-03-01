@@ -1,15 +1,84 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html> 
 
 <head>
-  <meta charset='utf-8'>
-
+    <meta charset=utf-8/>
+    <link rel="stylesheet" href="style.css">
+    <script src='js/d3.v6.1.1/d3.min.js'></script>
+    <title>HW-06</title>
 </head>
 
 
 <body>
- 
+    <h1 class="centered">hw-06 - D3 Brushing & Linking</h1>
+
+    <div class="container">
+        <!--Left Column-->
+        <div class="left-column">
+
+          <h2>Scatterplot</h2>
+          <div id="vis1"></div>
+
+          <br>
+
+          <h2>Bar Graph</h2>
+          <div id="vis2"></div>
+
+        </div>
+        <!--Right Column-->
+        <div class="right-column">
+          <!--Dropdown Menu-->
+          <div class="dropdown" id="coordinates">
+
+            <p>Select the x coordinate for the point you want to add.</p>
+
+            <select name="X-ax" id="X-ax" value="none">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+          </select>
+
+          <p>Select the y coordinate for the point you want to add.</p>
+
+          <select name="Y-ax" id="Y-ax" value="none">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+          </select>
+          <!--Create button-->
+          <button type="button" id="SendPoint">Add Point</button>
+        </div>
+        <!--Call function to display current coordinates-->
+        <p id = "print_points"></p>
+
+      </div>
+
+    </div>
+    <!--Call Java script-->
+    <script src="js/script.js"></script>
+    <!--Acknowledgements-->
+    <div>
+      <h2 class="centered">Acknowledgements</h2>
+      <ul>
+        <li><a href="https://ncoughlin.com/posts/d3-scatter-plot-visualization/">D3 Scatter</a></li>
+        <li><a href="https://d3-graph-gallery.com/graph/scatter_basic.html">Scatter Basics</a></li>
+        <li><a href="https://www.tutorialsteacher.com/d3js/create-bar-chart-using-d3js">D3 Bar Charts</a></li>
+        
+      </ul>
+    </div>
+
 </body>
 
 </html>
