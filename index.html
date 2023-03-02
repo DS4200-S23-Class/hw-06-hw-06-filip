@@ -12,65 +12,29 @@
 <body>
     <h1 class="centered">hw-06 - D3 Brushing & Linking</h1>
 
-    <div class="container">
-        <!--Left Column-->
-        <div class="left-column">
+    <div class = 'graphs'>
 
-          <h2>Scatterplot</h2>
-          <div id="vis1"></div>
-
-          <br>
-
-          <h2>Bar Graph</h2>
-          <div id="vis2"></div>
-
-        </div>
-        <!--Right Column-->
-        <div class="right-column">
-          <!--Dropdown Menu-->
-          <div class="dropdown" id="coordinates">
-
-            <p>Select the x coordinate for the point you want to add.</p>
-
-            <select name="X-ax" id="X-ax" value="none">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-          </select>
-
-          <p>Select the y coordinate for the point you want to add.</p>
-
-          <select name="Y-ax" id="Y-ax" value="none">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-          </select>
-          <!--Create button-->
-          <button type="button" id="SendPoint">Add Point</button>
-        </div>
-        <!--Call function to display current coordinates-->
-        <p id = "print_points"></p>
-
+      <!--left column div-->
+      <div class = 'left-column' id="vis1">
+        <h3 class = 'centered'> Petal_Length vs Sepal_Length</h3>
       </div>
 
+      <!--center column div-->
+      <div class = 'center-column' id = 'vis2'>
+        <h3 class = 'centered'> Petal_Width vs Sepal_Width</h3>
+      </div>
+
+      <!--right column div-->
+      <div class = 'right-column' id = 'vis3'>
+        <h3 class = 'centered'> Count of Species</h3>
+      </div>
     </div>
-    <!--Call Java script-->
+
+    <!--call java-->
     <script src="js/script.js"></script>
-    <!--Acknowledgements-->
+
+    <h2 class="centered">Acknowledgements</h2>
     <div>
-      <h2 class="centered">Acknowledgements</h2>
       <ul>
         <li><a href="https://ncoughlin.com/posts/d3-scatter-plot-visualization/">D3 Scatter</a></li>
         <li><a href="https://d3-graph-gallery.com/graph/scatter_basic.html">Scatter Basics</a></li>
