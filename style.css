@@ -7,10 +7,6 @@ body {
     text-align: center;
 }
 
-.container {
-    display: flex;
-  }
-
 /* Make left column 33% wide */
 .left-column {
     display: flex;
@@ -25,7 +21,7 @@ body {
     flex-direction:column;
     flex-basis: 100%;
     flex: 33;
-
+}
 /* Make right column 33% wide */
 .right-column {
     display: flex;
@@ -40,9 +36,9 @@ body {
 }
 
 .selectedPoint{
+  opacity: 1;
   stroke: lightblue;
   stroke-width: 5px;
-  opacity: 1;
 }
 
 .graphs {
