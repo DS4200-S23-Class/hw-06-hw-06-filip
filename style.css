@@ -16,7 +16,7 @@ body {
   }
 
 /* Make center column 33% wide */
-.middle-column {
+.center-column {
     display: flex;
     flex-direction:column;
     flex-basis: 100%;
@@ -33,6 +33,13 @@ body {
 .point-border {
   stroke-width: 3px;
   stroke: black;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .selectedPoint{

@@ -113,15 +113,15 @@ d3.csv("data/iris.csv").then((data) => {
         const selection = event.selection;
 
         //Highlighting
-        point2.classed("selectedPoint", (d) => { return Been-Brushed(selection, X_SCALE2(d.Sepal_Width) + MARGINS.left, Y_SCALE2(d.Petal_Width) + MARGINS.bottom ); });
-        point1.classed("selectedPoint", (d) => { return Been-Brushed(selection, X_SCALE2(d.Sepal_Width) + MARGINS.left, Y_SCALE2(d.Petal_Width) + MARGINS.bottom ); });
-        bars.classed("selectedPoint", (d) => { return Been-Brushed(selection, X_SCALE2(d.Sepal_Width) + MARGINS.left, Y_SCALE2(d.Petal_Width) + MARGINS.bottom ); });
+        point2.classed("selectedPoint", (d) => { return Been_Brushed(selection, X_SCALE2(d.Sepal_Width) + MARGINS.left, Y_SCALE2(d.Petal_Width) + MARGINS.bottom ); });
+        point1.classed("selectedPoint", (d) => { return Been_Brushed(selection, X_SCALE2(d.Sepal_Width) + MARGINS.left, Y_SCALE2(d.Petal_Width) + MARGINS.bottom ); });
+        bars.classed("selectedPoint", (d) => { return Been_Brushed(selection, X_SCALE2(d.Sepal_Width) + MARGINS.left, Y_SCALE2(d.Petal_Width) + MARGINS.bottom ); });
             
        
        }; 
     
     //Finds points in frame
-    function Been-Brushed(brush_coords, cx, cy) {
+    function Been_Brushed(brush_coords, cx, cy) {
        var x0 = brush_coords[0][0],
            x1 = brush_coords[1][0],
            y0 = brush_coords[0][1],
